@@ -1,63 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio|Reality8080</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header / Navbar -->
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Reality8080</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="nav-bar section-content">
-            <a href="#" class="nav-logo">
-                <h2 class="logo-text">😎 Reality8080</h2>
-            </a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Skill</a> 
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Project</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Awards</a> 
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background-color: #353d2f"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#hero-section">
+            <h2 class="logo-text mb-0">😎 Reality8080</h2>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#hero-section">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-section">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects-section">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="section-content">
-                <div class="hero-details">
-                    <h2 class="title">Nguyễn Trần Thiên Phú</h2>
-                    <h3 class="subtitle">Sinh viên K23 - HCMUTE</h3>
-                    <p class="description">Chuyên ngành: Công nghệ thông tin</p>
-                    <p class="description">Ngày tháng năm sinh: 30-07-2005</p>
-                    <p class="description">Sở thích: Chơi game, đọc sách, du lịch</p>
-                    <p class="description">Email: 23110286@student.hcmute.edu.vn</p>
-                    <p class="description">Số điện thoại: 0906905064</p>
-                    <div class="buttons">
-                        <a href="https://www.facebook.com/yourprofile" class="button fb">Facebook</a>
-                        <a href="https://www.tiktok.com/@yourprofile" class="button tiktok">TikTok</a>
-                    </div>
+      <section id="hero-section" class="hero-section">
+        <div class="container">
+          <div class="row min-vh-100 align-items-center">
+            <div class="col-lg-7">
+              <div class="hero-details">
+                <h1 class="title display-4" id="typed-name"></h1>
+                <h3 class="subtitle lead">Sinh viên K23 - HCMUTE</h3>
+                <p class="description">Chuyên ngành: Công nghệ thông tin</p>
+                <p class="description">Ngày tháng năm sinh: 30-07-2005</p>
+                <p class="description">
+                  Sở thích: Chơi game, đọc sách, du lịch
+                </p>
+                <p class="description">Email: 23110286@student.hcmute.edu.vn</p>
+                <p class="description">Số điện thoại: 0906905064</p>
+                <div class="buttons mt-4">
+                  <a
+                    href="https://www.facebook.com/yourprofile"
+                    class="btn btn-lg btn-light"
+                    target="_blank"
+                    >Facebook</a
+                  >
+                  <a
+                    href="https://github.com/Reality8080"
+                    class="btn btn-lg btn-outline-light"
+                    target="_blank"
+                    >GitHub</a
+                  >
                 </div>
-                <div class="hero-image-wrapper">
-                    <img src="Asset/Img/DueKy.jpeg" alt="DueKy" class="hero-image">
-                </div>
+              </div>
             </div>
-        </section>
+            <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+              <div class="hero-image-wrapper">
+                <img
+                  src="Asset/Img/DueKy.jpeg"
+                  alt="DueKy"
+                  class="hero-image img-fluid rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutme-section" class="py-5 bg-light text-dark">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="title display-5">Về bản thân</h2>
+              <div class="aboutme-details mt-4">
+                <p class="description fs-5">
+                  Xin chào! Tôi là một sinh viên năm hai đầy nhiệt huyết tại
+                  trường Đại học Sư phạm Kỹ thuật TP.HCM. Với niềm đam mê khám
+                  phá và xây dựng các ứng dụng web, tôi luôn tìm tòi, học hỏi
+                  những công nghệ mới để tạo ra các sản phẩm sáng tạo và hữu
+                  ích.
+                </p>
+                <p class="description fs-5">
+                  Mục tiêu của tôi là trở thành một lập trình viên Full-stack
+                  chuyên nghiệp, có khả năng làm việc hiệu quả ở cả Front-end và
+                  Back-end. Tôi tin rằng việc không ngừng học hỏi và thực hành
+                  qua các dự án thực tế là chìa khóa để đạt được mục tiêu này.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+      <section id="skills-section" class="py-5">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col">
+              <h2 class="title display-5">Kỹ năng</h2>
+            </div>
+          </div>
+          <div class="row text-center justify-content-center gy-4">
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="skill-card p-3 shadow-sm">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5 Icon"
+                  class="skill-icon"
+                />
+                <h3 class="skill-name mt-2 fs-6">HTML5</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="skill-card p-3 shadow-sm">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3 Icon"
+                  class="skill-icon"
+                />
+                <h3 class="skill-name mt-2 fs-6">CSS3</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="skill-card p-3 shadow-sm">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript Icon"
+                  class="skill-icon"
+                />
+                <h3 class="skill-name mt-2 fs-6">JavaScript</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="skill-card p-3 shadow-sm">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git Icon"
+                  class="skill-icon"
+                />
+                <h3 class="skill-name mt-2 fs-6">Git</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="skill-card p-3 shadow-sm">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub Icon"
+                  class="skill-icon"
+                />
+                <h3 class="skill-name mt-2 fs-6">GitHub</h3>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <div class="skill-card p-3 shadow-sm">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  alt="Figma Icon"
+                  class="skill-icon"
+                />
+                <h3 class="skill-name mt-2 fs-6">Figma</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="skills-section" class="py-5">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col">
+              <h2 class="title display-5">Kỹ năng</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="skill-item mb-4">
+                <h3 class="skill-name">HTML5</h3>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" data-level="90%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-4">
+                <h3 class="skill-name">CSS3</h3>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" data-level="85%"></div>
+                </div>
+              </div>
+              <div class="skill-item mb-4">
+                <h3 class="skill-name">JavaScript</h3>
+                <div class="skill-bar">
+                  <div class="skill-bar-fill" data-level="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-section" class="py-5 bg-light text-dark">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col">
+              <h2 class="title display-5">Dự án đã thực hiện</h2>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow">
+                <img
+                  src="https://via.placeholder.com/600x400.png?text=Portfolio"
+                  class="card-img-top"
+                  alt="Project 1 Screenshot"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Trang Portfolio Cá nhân</h5>
+                  <p class="card-text">
+                    Một trang web tĩnh để giới thiệu bản thân, kỹ năng và các dự
+                    án đã làm. Xây dựng với HTML, CSS và Bootstrap.
+                  </p>
+                  <div class="mt-auto">
+                    <a href="#" class="btn btn-primary">Xem trực tiếp</a>
+                    <a
+                      href="https://github.com/Reality8080/portfolio"
+                      class="btn btn-outline-secondary"
+                      target="_blank"
+                      >Mã nguồn</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow">
+                <img
+                  src="https://via.placeholder.com/600x400.png?text=To-Do+App"
+                  class="card-img-top"
+                  alt="Project 2 Screenshot"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Ứng dụng To-Do List</h5>
+                  <p class="card-text">
+                    Ứng dụng ghi chú công việc đơn giản, cho phép thêm, xóa và
+                    đánh dấu công việc đã hoàn thành. Luyện tập thao tác với
+                    DOM.
+                  </p>
+                  <div class="mt-auto">
+                    <a href="#" class="btn btn-primary">Xem trực tiếp</a>
+                    <a
+                      href="#"
+                      class="btn btn-outline-secondary"
+                      target="_blank"
+                      >Mã nguồn</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-section" class="py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 class="title display-5">Liên hệ</h2>
+              <p class="description fs-5 mt-4">
+                Tôi luôn sẵn sàng kết nối! Đừng ngần ngại liên hệ với tôi qua
+                email hoặc các nền tảng mạng xã hội.
+              </p>
+              <div class="contact-methods mt-4">
+                <a
+                  href="mailto:23110286@student.hcmute.edu.vn"
+                  class="btn btn-lg btn-success"
+                  >Gửi Email</a
+                >
+                <a href="tel:0906905064" class="btn btn-lg btn-outline-light"
+                  >Gọi cho tôi</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>
